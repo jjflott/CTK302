@@ -13,5 +13,21 @@ function setup() {
 }
 
 function draw() {
-
+  background("black");
+  fill("white");
+  text("the name of the song is elevate and I like it because I want to elevate like Doctor Strange", 100, 100, 400, 400);
 }
+
+function mouseReleased() {
+  if (elevate.isPlaying()) {
+    elevate.pause();
+  }  else {
+      elevate.play()
+  }
+}
+
+function touchStarted() {
+  getAudioContext().resume();
+}
+
+
