@@ -3,22 +3,26 @@
 
 let state = 0;
 let timer = 0;
+let f1;
 
 function setup() {
   createCanvas(500, 500);
+  f1 = loadFont("assets/Brenza.ttf");
   textAlign(CENTER);
 }
 
 function draw() {
   switch(state) {
     case 0:
-      background("red");
-      text("why did \n the chx", width/2, height/2);
+      background("#c58bd6");
+      textFont(f1, 48);
+      text("how do celebrities \n stay cool?", width/2, height/2);
       break;
 
     case 1:
-      background("blue");
-      text("because", width/2, height/2);
+      background("lightyellow");
+      textFont(f1, 48);
+      text("they have many fans", width/2, height/2);
       break;
   }
 
