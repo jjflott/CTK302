@@ -2,22 +2,26 @@
 
 
 let state = 0;
+let f1;
 
 function setup() {
   createCanvas(500, 500);
+  f1 = loadFont("assets/cocogoose.ttf");
   textAlign(CENTER);
 }
 
 function draw() {
   switch(state) {
     case 0:
-      background("red");
-      text("why did \n the chx", width/2, height/2);
+      background("#d0752f");
+      textFont(f1, 43);
+      text("I have a joke \n about pizza", width/2, height/2);
       break;
 
     case 1:
-      background("blue");
-      text("because", width/2, height/2);
+      background("#5ea184");
+      textFont(f1, 43);
+      text("but it's too cheesy", width/2, height/2);
       break;
   }
 
