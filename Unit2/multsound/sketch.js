@@ -2,6 +2,7 @@
 
 let state = -1;
 let s1, s2, s3;
+let f1;
 
 function preload() {
   s1 = loadSound("assets/happyrock.mp3");
@@ -11,33 +12,40 @@ function preload() {
 
 function setup() {
   createCanvas(800, 800);
+  f1 = loadFont("assets/cocogoose.ttf");
 }
 
 function draw() {
 
-  background(100);
-
   switch (state) {
     case -1:
-      text("please click to start", 100, 100);
+      background("#0998f6");
+      textFont(f1, 40);
+      text("please click to start \n :)", 100, 100);
       break;
 
     case 0:
-      text("0", 100, 100);
+      background("#d92666");
+      textFont(f1, 40);
+      text("song name: Happy Rock", 100, 100);
       if (!s1.isPlaying()) {
         s1.play();
       }
       break;
 
     case 1:
-      text("1", 100, 100);
+      background("#5ba47e");
+      textFont(f1, 40);
+      text("song name: Memories", 100, 100);
       if (!s2.isPlaying()) {
         s2.play();
       }
       break;
 
     case 2:
-      text("2", 100, 100);
+      background("#c9ad36");
+      textFont(f1, 40);
+      text("song name: Piano Moment", 100, 100);
       if (!s3.isPlaying()) {
         s3.play();
       }
