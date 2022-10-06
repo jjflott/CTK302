@@ -2,22 +2,26 @@
 
 
 let state = 0;
+let f1;
 
 function setup() {
   createCanvas(500, 500);
+  f1 = loadFont("assets/honeymints.ttf");
   textAlign(CENTER);
 }
 
 function draw() {
   switch(state) {
     case 0:
-      background("red");
-      text("why did \n the chx", width/2, height/2);
+      background("lightblue");
+      textFont(f1, 48);
+      text("where do you learn \n to make ice cream?", width/2, height/2);
       break;
 
     case 1:
-      background("blue");
-      text("because", width/2, height/2);
+      background("lightpink");
+      textFont(f1, 48);
+      text("sundae school", width/2, height/2);
       break;
   }
 }
