@@ -2,9 +2,11 @@
 
 let mic;
 let vol = 0;
+let f1;
 
 function setup() {
   createCanvas(400, 400);
+  f1 = loadFont("assets/pocket.ttf");
 
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
@@ -18,9 +20,9 @@ function draw() {
   vol = mic.getLevel(); // returned level is between 0 and 1
 
   // text on the screen for debugging
-  textSize(18);
+  textFont(f1, 25);
   text(
-    "Click the screen first to give\npermission for mic input.\nMy volume is " +
+    " - Click the screen first to give\npermission for mic input.\n - My volume is " +
       vol.toFixed(3),
     10,
     60
@@ -29,7 +31,8 @@ function draw() {
   // this moves the box
   //  x = vol*200 ;
   x = map(vol, 0, 1, 0, width);
-  rect(x, 200, 50, 50);
+  fill("black")
+  rect(x, 200, 100, 50);
 }
 
 // you need this code for audio programs and also, the user
