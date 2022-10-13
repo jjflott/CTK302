@@ -48,7 +48,7 @@ function draw() {
     case 2:
       background("lightblue");
       textFont(f1, 18);
-      text("and there is no one else I'd rather be with \n please, promise you want me", width/2, 100);
+      text("and there is no one else I would rather be with \n please, promise you want me", width/2, 100);
       image(i3, width/2, height/2 + 50, 370, 200);
       timer++;
       if (timer > 5 * 60) {
