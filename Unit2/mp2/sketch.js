@@ -42,7 +42,7 @@ function draw() {
       // images go here, text here
 
       textFont(f1, 28);
-      text("glammed up sims I made in 2019", width/2, 100);
+      text("[timer] glammed up sims I made in 2019", width/2, 100);
       image(i1, width/2 - 80, height/2 - 60, 300, 200);
       image(i2, width/2 + 80, height/2 + 180, 300, 200);
       timer++;
@@ -55,7 +55,7 @@ function draw() {
     case 2:
       background("#fff682");
       textFont(f1, 28);
-      text("when the island living pack dropped and my sim glitched", width/2, 100);
+      text("[timer] when the island living pack dropped and my sim glitched", width/2, 100);
       image(i3, width/2 - 80, height/2 - 30, 200, 300);
       image(i4, width/2 + 130, height/2 + 80, 200, 300);
       timer++;
@@ -68,7 +68,7 @@ function draw() {
     case 3:
       background("lightblue");
       textFont(f1, 28);
-      text("making a modern day mulan in create a sim", width/2, 100);
+      text("[timer] making a modern day mulan in create a sim", width/2, 100);
       image(i5, width/2, height/2 + 80, 500, 365);
       timer++;
       if (timer > 10 * 60) {
