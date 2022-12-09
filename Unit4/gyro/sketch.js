@@ -67,7 +67,7 @@ function draw() {
   textSize(300);
   textAlign(CENTER);
   textFont(f1, 300);
-  text("itzy :)", 600, 100);
+  text("itzy :)", 600, 500);
 
 }
 
