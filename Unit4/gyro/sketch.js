@@ -66,7 +66,7 @@ function draw() {
   noStroke();
   textSize(100);
   // textAlign(CENTER);
- // textFont(f1, 300);
+  textFont(f1);
   text("itzy :)", 100, 300);
 
 }
