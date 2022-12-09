@@ -14,7 +14,7 @@ let img1;
 let f1;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 600);
 
   img1 = loadImage("assets/aurora.jpeg");
   f1 = loadFont("assets/smile.otf");
