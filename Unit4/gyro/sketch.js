@@ -64,10 +64,10 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(200);
+  textSize(100);
   // textAlign(CENTER);
  // textFont(f1, 300);
-  text("itzy :)", 100, 500);
+  text("itzy :)", 100, 300);
 
 }
 
